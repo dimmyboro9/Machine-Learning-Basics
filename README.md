@@ -4,6 +4,8 @@ There is a repository showing my first steps in machine learning and containing 
 ## Projects
 - [Dimensionality reduction and binary classification](#Dimensionality-reduction-and-binary-classification)
 - [Neural networks](#Neural-networks)
+- [Clustering](#Clustering)
+- [Regression](#Regression)
 
 ## Dimensionality reduction and binary classification
 This machine learning project involves binary classification and dimensionality reduction using a dataset loaded from [Fashion Mnist dataset](https://www.kaggle.com/datasets/zalando-research/fashionmnist). The primary objectives are to build, evaluate, and optimize classification models while exploring various dimensionality reduction techniques.
@@ -16,5 +18,16 @@ Then, dimensionality reduction methods, **Principal Component Analysis (PCA)** a
 This machine learning project is dedicated to image multiclass classification, where the goal is to classify images into multiple categories using neural networks. The project begins with loading image data from [Fashion Mnist dataset](https://www.kaggle.com/datasets/zalando-research/fashionmnist), data handling and organizing it into subsets for training, model comparison, and performance prediction. Then, data exploration techniques are employed to uncover patterns, detect outliers, and understand the dataset's characteristics. Data visualization, including graphs and images, is used for better understand of our exploration conclusions.
 
 The heart of the project revolves around the development and training of various neural network models. The project includes the creation of different **Feedforward Neural Network (FNN)**, **Convolutional Neural Networks (CNN)** and their **combinations**. Each of the models subjected to extensive experimentation. This experimentation includes architectural variations such as layer depths and sizes, data standardization/normalization, optimization methods, and regularization techniques. When creating combinations of feed-forward and convolutional neural networks, I also experimented with the overall network architecture and the order of layers. The suitability of each model for multiple classification is evaluated using model evaluation methods, and the results are accompanied by detailed comments. The project concludes by selecting the best-performing model and estimating its accuracy on new, unseen data.
+
+## Clustering
+This project delves into the analysis of credit card data using **clustering techniques**. The dataset, sourced from the file `CC GENERAL.csv` (available [here](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata)), provides information about credit card usage. To comprehend the dataset's intricacies, the initial steps involve thorough data exploration, uncovering patterns, and addressing issues like missing values. The dataset's description in `data_description.txt` guides this exploration, offering context for the variables used.
+
+A pivotal aspect of this project is the creation of a **KMeans algorithm**, followed by the application of clustering using both the custom implementation and the `sklearn.cluster.KMeans` and comparing results between them. Then I perform agglomerative hierarchical clustering and plot dendrograms for visual comprehension. Different experimentation includes tuning hyperparameter values and using data standardization. The **Silhouette method** helps me in evaluating cluster quality.
+
+The ultimate goal is to choose the most fitting clustering approach. The selected method helps understand and group credit card users by looking at things like `BALANCE`, `PURCHASES`, `CASH_ADVANCE`, `PAYMENTS`, and more. This helps identify different types of users in the dataset.
+
+This project was implemented on 28.12.2022.
+
+## Regression
 
 `Copyright (c) Dmytro Borovko 2023`
