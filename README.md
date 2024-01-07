@@ -29,5 +29,12 @@ The ultimate goal is to choose the most fitting clustering approach. The selecte
 This project was implemented on 28.12.2022.
 
 ## Regression
+This project focuses on analyzing life expectancy data sourced from the file `LifeExpectancyData.csv`, available [here](https://www.kaggle.com/kumarajarshi/life-expectancy-who). The dataset's description, accessible on the original dataset page, guides the exploration process. 
+
+The initial step involves dividing the data into appropriate subsets. Then, we carefully explore the data, paying attention to things like missing information. Based on what we see, we take actions to make sure the data is reliable and complete.
+
+**Linear** and **ridge regression** models are applied, with a thorough evaluation using **MAE** (mean absolute error) and **RMSE** (root mean squared error) for error measurement. To increase models performance, experiments include data standardization and tuning hyperparameters. In addition to linear and ridge regression, other models are explored, broadening the analysis. The final step involves selecting the best-performing model based on RMSE and estimating the expected RMSE and MAE on new, previously inaccessible data, providing insights into the model's predictive capabilities.
+
+This project was implemented on 4.12.2022.
 
 `Copyright (c) Dmytro Borovko 2023`
